@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trabalho HTML, CSS, ES3</title>
+</head>
+
+<body class="body">
+    <header class="jumbotron">
+        <h1 class="display-5">Trabalho</h1>
+        <p class="lead">Atividade Pós Unipar</p>
+    </header>
+
+    <main id="master" >
+       <h2>Produtos</h2>
+       <div class="loja">
+            
+            <section id="produtos" class="row row-cols-1 row-cols-lg-5 g-6" style="padding: 40px;" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="leave(event)"> 
+                
+                <article id="1" class="col" draggable="true" ondragstart="drag(event)" ondragover="denyDrop(event)">
+                    <div class="card">
+                        <img class="card-img-top" style="height: 12rem;" src="https://picsum.photos/500/500?grayscale">
+                            <div class="card-body">
+                                <div>
+                                    <h1 class="card-title">Produto 1</h1>
+                                    <p class="card-text">Descrição</p>
+                                </div>
+                                <div class="list-group list-group-flush">
+                                    <h3>Valor R$2,50</h3>
+                                    <spam>Quantidade:</spam>
+                                    <input type="number" name="qtde" min="0" value="0">
+                                    <input type="text" name="valor" value="2.50" disabled>
+                                </div>
+                            </div>
+                    </div>
+                </article>
+                <article id="2" class="col" draggable="true" ondragstart="drag(event)" ondragover="denyDrop(event)">
+                    <div class="card">
+                        <img class="card-img-top" style="height: 12rem;" src="https://picsum.photos/500/500?grayscale">
+                            <div class="card-body">
+                                <div>
+                                    <h1 class="card-title">Produto 2</h1>
+                                    <p class="card-text">Descrição</p>
+                                </div>
+                                <div class="list-group list-group-flush">
+                                    <h3>Valor R$3,50</h3>
+                                    <spam>Quantidade:</spam>
+                                    <input type="number" name="qtde" min="0" value="0">
+                                    <input type="text" name="valor" value="3.50" disabled>
+                                </div>
+                            </div>
+                    </div>
+                </article>
+            </section>
+
+        </div> 
+
+        <h2>Carrinho</h2>  
+        <section id="checkout" class="row">
+              
+            <section id="carrinho" class="row row-cols-2 row-cols-lg-5 g-1" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="leave(event)">
+                
+            </section>
+            
+
+            <section id="total" >
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th class="row">Total itens</th>
+                            <td id="total-itens"></td>
+                        </tr>
+                        <tr>
+                            <th class="row">Total</th>
+                            <td id="valor-total"></td>
+                        </tr>
+                        </thead>
+                </table>
+            </section>
+            </div>
+        </section>
+    </main>
+    <footer class="card-footer">
+        <h4>Everton Alan Busse - Pós Web & Mobile 2020 </h4>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    
+    <script src="js/app.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+
+</body>
+
+</html>

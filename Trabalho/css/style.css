@@ -1,0 +1,68 @@
+.jumbotron {
+  background-color: #3CD1FA;
+}
+.jumbotron h1 {
+  color: #272427;
+}
+
+#master{
+  margin-left: 20px;
+  margin-right: 20px;
+ 
+}
+
+.loja{
+  border-top: solid;
+
+}
+
+#produtos {
+  max-height: 20%;
+}
+#produtos article {
+  height: 20%;
+  width: 50%;
+  align-items: center;
+}
+
+#produtos article spam {
+  visibility: hidden;
+}
+
+#produtos article input:nth-child(3) {
+  visibility: hidden;
+}
+
+#produtos article input:nth-child(4) {
+  visibility: hidden;
+}
+
+#carrinho{
+  width: 70%;
+  padding: 40px;
+  margin-left: 3%;
+}
+
+#carrinho article input:nth-child(4) {
+  visibility: hidden;
+}
+
+
+
+#carrinho article {
+  max-width: 540px;
+  height: max-content;
+
+}
+
+#checkout{
+  border-top: solid;
+
+}
+
+#total{
+  padding: 50px;
+  width: 20%;
+  align-content: center;
+  text-align: center;
+}
