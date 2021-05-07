@@ -1,46 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">    
     <title>HTML5, CSS3, JS</title>
 </head>
+
 <body>
-    <header>
-        <h1>Titulo do conteudo</h1>
+    <header class="jumbotron">
+        <h1 class="display-4">HTML, CSS, ES3</h1>
+        <p class="lead">Atividade Pós Unipar</p>
     </header>
-    <nav>
-        <a href=#>Notícias</a>
-        <a href=pages/formulario.html>Formulário</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link  link font-weight-bolder" href="#">Noticias <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="/pages/formulario.html">Formulário <span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
     </nav>
+
     <main>
-        <article>
-            <h1>Google mostra quais startups cresceram na pandemia e o novo perfil do fundador de startups</h1>
-            <h3>27/03/2021 - Mariana Fonseca | <a href="mariana_fonseca@infomoney.com.br">mariana_fonseca@infomoney.com.br</a>  </h3>
-            <img src="image/jovens-startups.jpg" width="300px">
-            <p>Fernando Caloi, diretora de programas do Google for Startups na América Latina, fala sobre startups durante a pandemia e participação feminina na tecnologia</p>         
-            <a href="https://www.infomoney.com.br/negocios/google-mostra-quais-startups-cresceram-na-pandemia-e-o-novo-perfil-do-fundador-de-startups/">Veja a matéria completa aqui</a>
-        </article>
-        <article>
-            <h1>Os efeitos do bloqueio do Canal de Suez por um navio de 200 mil toneladas para a economia global</h1>
-            <h3>27/03/2021 - Equipe InfoMoney | <a href="equipe_infomoney@infomoney.com.br">equipe_infomoney@infomoney.com.br</a> </h3>
-            <img src="image/embarcação.jpg" width="300px">
-            <p>A paralisação do tráfego em uma das hidrovias mais importantes do mundo coloca ainda mais pressão sobre transportadoras que já operam com capacidade total</p>         
-            <a href="https://www.infomoney.com.br/economia/os-efeitos-do-bloqueio-do-canal-de-suez-por-um-navio-de-200-mil-toneladas-para-a-economia-global/">Veja a matéria completa aqui</a>
-        </article>
-        <article>
-            <h1>Como declarar day trade no Imposto de Renda e abater do lucro o prejuízo?</h1>
-            <h3>27/03/2021 - Equipe InfoMoney | <a href="equipe_infomoney@infomoney.com.br">equipe_infomoney@infomoney.com.br</a> </h3>
-            <img src="image/imposto.jpg" width="300px">
-            <p>Saiba declarar no IR investimentos em ações compradas e vendidas em um único dia e como reduzir o imposto ao compensar lucro com prejuízo</p>         
-            <a href="https://www.infomoney.com.br/minhas-financas/como-declarar-day-trade-no-imposto-de-renda-e-abater-do-lucro-o-prejuizo/">Veja a matéria completa aqui</a>
-        </article>
+        <div class="container-fluid">
+            <div id="dropzone"  class="row" style="padding: 40px;" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="leave(event)">
+            
+            </div>
+            <div class="row" style="padding: 40px;" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="leave(event)">
+                <div id="new1" class="col-lg-4" draggable="true" ondragstart="drag(event)" ondragover="denyDrop(event)">
+                    <article>
+                        <h3 >Google mostra quais startups cresceram na pandemia e o novo perfil do fundador de startups
+                        </h3>
+                        <small>27/03/2021 - Mariana Fonseca | <a
+                                href="mariana_fonseca@infomoney.com.br">mariana_fonseca@infomoney.com.br</a> </small>
+                        <img class="img-fluid" src="image/jovens-startups.jpg">
+                        <p>Fernando Caloi, diretora de programas do Google for Startups na América Latina, fala sobre
+                            startups durante a pandemia e participação feminina na tecnologia</p>
+                        <a
+                            href="https://www.infomoney.com.br/negocios/google-mostra-quais-startups-cresceram-na-pandemia-e-o-novo-perfil-do-fundador-de-startups/">Veja
+                            a matéria completa aqui</a>
+                    </article>
+                </div>
+                <div id="new2" class="col-lg-4" draggable="true" ondragstart="drag(event)" ondragover="denyDrop(event)">
+                    <article>
+                        <h3>Os efeitos do bloqueio do Canal de Suez por um navio de 200 mil toneladas para a economia
+                            global</h3>
+                        <small>27/03/2021 - Equipe InfoMoney | <a
+                                href="equipe_infomoney@infomoney.com.br">equipe_infomoney@infomoney.com.br</a> </small>
+                        <img class="img-fluid" src="image/embarcação.jpg">
+                        <p>A paralisação do tráfego em uma das hidrovias mais importantes do mundo coloca ainda mais
+                            pressão sobre transportadoras que já operam com capacidade total</p>
+                        <a
+                            href="https://www.infomoney.com.br/economia/os-efeitos-do-bloqueio-do-canal-de-suez-por-um-navio-de-200-mil-toneladas-para-a-economia-global/">Veja
+                            a matéria completa aqui</a>
+                    </article>
+                </div>
+                <div id="new3" class="col-lg-4" draggable="true" ondragstart="drag(event)" ondragover="denyDrop(event)">
+                    <article>
+                        <h3>Como declarar day trade no Imposto de Renda e abater do lucro o prejuízo?</h3>
+                        <small>27/03/2021 - Equipe InfoMoney | <a
+                                href="equipe_infomoney@infomoney.com.br">equipe_infomoney@infomoney.com.br</a> </small>
+                        <img class="img-fluid" src="image/imposto.jpg">
+                        <p>Saiba declarar no IR investimentos em ações compradas e vendidas em um único dia e como
+                            reduzir o imposto ao compensar lucro com prejuízo</p>
+                        <a href="https://www.infomoney.com.br/minhas-financas/como-declarar-day-trade-no-imposto-de-renda-e-abater-do-lucro-o-prejuizo/">Veja a matéria completa aqui</a>
+                    </article>
+                </div>
+            </div>
     </main>
 
-    <footer>
-        </br>
+    <footer class="jumbotron">
         <h4>Everton Alan Busse - Pós Web & Mobile 2020 </h4>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+          ev.currentTarget.style.border = '3px dotted #ccc'
+          ev.currentTarget.style.background = '#ccc'
+        }
+
+        function denyDrop(ev) {
+            ev.stopPropagation();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+          
+        }
+
+        function leave(ev){
+            ev.preventDefault();
+            ev.currentTarget.style.border = 'none'
+            ev.currentTarget.style.background = 'inherit'
+
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+          ev.currentTarget.style.border = 'none'
+          ev.currentTarget.style.background = 'inherit'
+        }
+    </script>    
+
 </body>
+
 </html>
